@@ -19,7 +19,7 @@ let players = {};  // Track white and black players by socket.id
 app.get('/', (req, res) => {
     res.render('index', { title: "Chess Game" });
 });
-
+  
 io.on('connection', (uniquesocket) => {
     console.log('A user connected:', uniquesocket.id);
 
